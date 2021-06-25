@@ -1,0 +1,22 @@
+body {
+	background-color: cornflowerblue;
+	font: normal 15pt arial;
+}
+
+h1 {
+	text-align: center;
+	color: white;
+}
+
+section {
+	background-color: whitesmoke;
+	margin: auto;
+	width: 500px;
+	padding: 15px;
+	border-radius: 8px;
+	box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.39);
+}
+
+select#formato {
+	width: 140px;
+}

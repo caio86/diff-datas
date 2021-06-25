@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Dias</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1>Diferença de datas</h1>
+	<section>
+		<div id="dados">
+			<p>
+				<label for="dataI">Digite a primeira data:</label>
+				<input type="date" name="dataI" id="dataI">
+			</p>
+			<p>
+				<label for="dataF">Digite a segunda data:</label>
+				<input type="date" name="dataF" id="dataF">
+			</p>
+			<p>
+				Formato do resultado:
+				<select name="formato" id="formato">
+					<option value="dias">Dias</option>
+					<option value="meses">Meses</option>
+					<option value="anos">Anos</option>
+				</select>
+			</p>
+			<input type="button" value="Calcular" onclick="difData()">
+		</div>
+		<div id="res"></div>
+	</section>
+	<script src="script.js"></script>
+</body>
+</html>
