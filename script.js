@@ -23,17 +23,16 @@ function difData() {
 
 			case 'meses':
 				let difMeses = Math.round(difTempo / (1000 * 60 * 60 *24 * 7 * 4))
-				resultado.innerHTML = difMeses
+				resultado.innerHTML = `<p>A diferença de meses entre a data <strong>${diaI.getDate()}/${diaI.getMonth()}/${diaI.getFullYear()}</strong>, e a data <strong>${diaF.getDate()}/${diaF.getMonth()}/${diaF.getFullYear()}</strong> é de <strong>${difMeses} meses</strong>.</p>`
 				break;
 
 			case 'anos':
 				let difAnos = Math.abs(diaI.getFullYear() - diaF.getFullYear())
-				resultado.innerHTML = difAnos
+				resultado.innerHTML = `<p>A diferença de anos entre a data <strong>${diaI.getDate()}/${diaI.getMonth()}/${diaI.getFullYear()}</strong>, e a data <strong>${diaF.getDate()}/${diaF.getMonth()}/${diaF.getFullYear()}</strong> é de <strong>${difAnos} anos</strong>.</p>`
 				break;
 
 			default:
 				resultado.innerHTML = '<p>Formato inválido</p>'
-				resultado.innerHTML += select.value
 				break;
 		}
 		
