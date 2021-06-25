@@ -18,17 +18,17 @@ function difData() {
 		switch (select.value) {
 			case 'dias':
 				let difDias = (difTempo / (1000 * 60 * 60 * 24))
-				resultado.innerHTML = `<p>A diferença de dias entre a data <strong>${diaI.getDate()}/${diaI.getMonth()}/${diaI.getFullYear()}</strong>, e a data <strong>${diaF.getDate()}/${diaF.getMonth()}/${diaF.getFullYear()}</strong> é de <strong>${difDias} dias</strong>.</p>`
+				resultado.innerHTML = `<p>A diferença de dias entre a data <strong>${diaI.getDate()}/${diaI.getMonth() + 1}/${diaI.getFullYear()}</strong>, e a data <strong>${diaF.getDate()}/${diaF.getMonth() + 1}/${diaF.getFullYear()}</strong> é de <strong>${difDias} dias</strong>.</p>`
 				break;
 
 			case 'meses':
 				let difMeses = Math.round(difTempo / (1000 * 60 * 60 *24 * 7 * 4))
-				resultado.innerHTML = `<p>A diferença de meses entre a data <strong>${diaI.getDate()}/${diaI.getMonth()}/${diaI.getFullYear()}</strong>, e a data <strong>${diaF.getDate()}/${diaF.getMonth()}/${diaF.getFullYear()}</strong> é de <strong>${difMeses} meses</strong>.</p>`
+				resultado.innerHTML = `<p>A diferença de meses entre a data <strong>${diaI.getDate()}/${diaI.getMonth() + 1}/${diaI.getFullYear()}</strong>, e a data <strong>${diaF.getDate()}/${diaF.getMonth() + 1}/${diaF.getFullYear()}</strong> é de <strong>${difMeses} meses</strong>.</p>`
 				break;
 
 			case 'anos':
 				let difAnos = Math.abs(diaI.getFullYear() - diaF.getFullYear())
-				resultado.innerHTML = `<p>A diferença de anos entre a data <strong>${diaI.getDate()}/${diaI.getMonth()}/${diaI.getFullYear()}</strong>, e a data <strong>${diaF.getDate()}/${diaF.getMonth()}/${diaF.getFullYear()}</strong> é de <strong>${difAnos} anos</strong>.</p>`
+				resultado.innerHTML = `<p>A diferença de anos entre a data <strong>${diaI.getDate()}/${diaI.getMonth() + 1}/${diaI.getFullYear()}</strong>, e a data <strong>${diaF.getDate()}/${diaF.getMonth() + 1}/${diaF.getFullYear()}</strong> é de <strong>${difAnos} anos</strong>.</p>`
 				break;
 
 			default:
