@@ -20,3 +20,9 @@ section {
 select#formato {
 	width: 140px;
 }
+
+@media screen and (max-width: 600px) {
+	section {
+		width: 356px;
+	}
+}
