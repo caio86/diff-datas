@@ -20,3 +20,13 @@ section {
 select#formato {
 	width: 140px;
 }
+
+@media screen and (max-width: 600px) {
+	section {
+		width: 400px;
+	}
+
+	/* select#formato {
+		width: 50px;
+	} */
+}
